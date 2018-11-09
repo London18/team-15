@@ -1,18 +1,3 @@
-
-<!DOCTYPE html>
-<html>
-<head>
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-    <link rel="stylesheet" href="css/mystyle.css">
-
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-    <script src="css/jquery-3.3.1.min.js"></script>
-
 <script>
     jQuery(function($) {
         var $bodyEl = $('body'),
@@ -50,7 +35,7 @@
 
 </script>
 </head>
-<body>
+
 <div id="sidedrawer" class="mui--no-user-select">
     <div id="sidedrawer-brand" class="mui--appbar-line-height">
         <span class="mui--text-title">Brand.io</span>
@@ -79,16 +64,3 @@
         </div>
     </div>
 </header>
-<div id="content-wrapper">
-    <!-- Main content goes here -->
-</div>
-<footer id="footer">
-    <div class="mui-container-fluid">
-    </div>
-</footer></body>
-<!--JavaScript at end of body for optimized loading-->
-<script type="text/javascript" src="js/materialize.min.js"></script>
-
-</body>
-</html>
-        
