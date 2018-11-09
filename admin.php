@@ -3,7 +3,7 @@
 <html>
 
 <?php
-include('navbar.php');
+include('adminNav.php');
 ?>
 <div id="content-wrapper">
     <!-- Main content goes here -->
