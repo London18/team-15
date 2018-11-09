@@ -1,3 +1,15 @@
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="css/mystyle.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script src="css/jquery-3.3.1.min.js"></script>
+
+<body class="hide-sidedrawer">
 <script>
     jQuery(function($) {
         var $bodyEl = $('body'),
@@ -38,9 +50,10 @@
 
 <div id="sidedrawer" class="mui--no-user-select">
     <div id="sidedrawer-brand" class="mui--appbar-line-height">
-        <span class="mui--text-title">Brand.io</span>
+        <span><img width="100%" src="images/logo.jpeg" alt="logo" /></span>
     </div>
     <div class="mui-divider"></div>
+
     <ul>
         <li>
             <strong>Category 1</strong>
