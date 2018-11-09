@@ -21,6 +21,16 @@
     margin: auto;
 }
 
+#sidedrawer-brand{
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#sidedrawer{
+    font-family: sans-serif;
+}
 
 
 
@@ -93,10 +103,19 @@ button {
     padding-bottom: 160px;
 }
 
+#main-admin-page{
+    margin: 5% 10%;
+}
+
 #footer {
     height: 160px;
     margin-left: 0px;
     transition: margin-left 0.2s;
+}
+
+#footer-text{
+    text-align: center;
+    padding-top: 5%;
 }
 
 @media (min-width: 768px) {
