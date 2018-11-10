@@ -44,9 +44,11 @@ button {
 }
 
 
-/**
- * Layout CSS
- */
+tr:hover{
+    background-color: #00b0ff;
+}
+
+
 #header {
     position: fixed;
     top: 0;
