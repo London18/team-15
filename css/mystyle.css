@@ -101,19 +101,6 @@ body.hide-sidedrawer #footer {
 
 }
 
-#content-wrapper {
-    min-height: 100%;
-    overflow-x: hidden;
-    margin-left: 0px;
-    transition: margin-left 0.2s;
-
-    /* sticky bottom */
-    margin-bottom: -160px;
-    padding-bottom: 160px;
-}
-
-
-
 
 
 /**
@@ -141,20 +128,6 @@ body.hide-sidedrawer #footer {
 }
 
 
-/**
- * Footer CSS
- */
-#footer {
-    background-color: #24499F;
-    color: #fff;
-}
-
-#footer a {
-    color: #fff;
-    text-decoration: underline;
-}
-
-
 
 
 
@@ -170,7 +143,7 @@ body.hide-sidedrawer #footer {
 }
 
 #sidedrawer > ul {
-    padding-left: 0px;
+    padding-left: 0;
 }
 
 #sidedrawer > ul > li:first-child {
@@ -188,12 +161,15 @@ body.hide-sidedrawer #footer {
 }
 
 #sidedrawer strong + ul > li {
-    padding: 6px 0px;
+    padding: 6px 0;
 }
 
 .navpull {
     background-color: #0D47A1;
 }
+
+
+
 
 .divider {
     padding: 30px;
