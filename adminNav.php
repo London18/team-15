@@ -35,7 +35,7 @@
     });
 
 </script>
-</head>
+
 
 <div id="sidedrawer" class="mui--no-user-select">
     <div id="sidedrawer-brand" height="200px;" class="mui--appbar-line-height">
@@ -68,8 +68,6 @@
     </div>
 </header>
 
-<!-- open the body tag in adminNav.php as we need to apply a class to it.
- the divider stops the menu bar from overlapping the content -->
-<body class="hide-sidedrawer">
+<!-- the divider stops the menu bar from overlapping the content -->
 
 <div class="divider"></div>
