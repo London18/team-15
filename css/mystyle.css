@@ -17,6 +17,9 @@
 
 #dash {
     background-color: slategray;
+    color: white;
+    text-align: center;
+    alignment: center;
 }
 
     @media only screen and (max-width:750px) {
