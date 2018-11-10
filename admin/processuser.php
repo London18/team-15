@@ -60,11 +60,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 
         if($user->getAccessLevel($_SESSION['login_user']) == 100)
         {
-            popup("Account Registered, Returning to Admin Dashboard","/admin/admin.php");
+            popup("Account Registered, Returning to Admin Dashboard","/index.php");
         }
         else
         {
-            popup("Account Registered, Please login","/admin/admin.php");
+            popup("Account Registered, Please login","/index.php");
         }
         die("Error");
         //echo 'Worked';
@@ -77,5 +77,5 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 }
 else
 {
-    pageReturn("/admin/admin.php");
+    pageReturn("/index.php");
 }

@@ -1,7 +1,7 @@
 
 <script>
-    jQuery(function($) {
-        var $bodyEl = $('body'),
+jQuery(function($) {
+    var $bodyEl = $('body'),
             $sidedrawerEl = $('#sidedrawer');
 
 
@@ -10,8 +10,8 @@
             var options = {
                 onclose: function() {
                     $sidedrawerEl
-                        .removeClass('active')
-                        .appendTo(document.body);
+                    .removeClass('active')
+                    .appendTo(document.body);
                 }
             };
 
@@ -45,15 +45,7 @@
 
     <ul>
         <li>
-            <strong>Category 1</strong>
-
-        </li>
-        <li>
-            <strong><a href="admin/adduser.php">Add User</a> </strong>
-
-        </li>
-        <li>
-            <strong><a href="logout.php">Logout</a> </strong>
+            <strong><a href="logout.php">Logout</a></strong>
 
         </li>
     </ul>

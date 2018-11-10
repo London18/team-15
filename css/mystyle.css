@@ -17,6 +17,12 @@
 
 #dash {
     background-color: slategray;
+<<<<<<< HEAD
+=======
+    color: white;
+    text-align: center;
+    alignment: center;
+>>>>>>> dean
 }
 
     @media only screen and (max-width:750px) {
