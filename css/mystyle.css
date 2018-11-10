@@ -194,20 +194,19 @@ body.hide-sidedrawer #footer {
 
 .modal{
     height: 500px;
+    padding-bottom: -5%;
 }
 
 .modal .modal-content{
     color: black;
-    width: 66%;
-    height: 50%
+    padding-bottom: 0px;
+    padding-top: 24px;
+    padding-left: 24px;
+    padding-right: 24px
 }
 
-.modal-content .timepicker-container{
-    width: 80%;
-    height: 40%;
-}
-
-.timepicker-modal{
-    top: -5% !important;
-    position:absolute;
+#row1 {
+    text-align: left;
+    align-content: left;
+    align-items: left;
 }
