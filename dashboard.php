@@ -2,9 +2,8 @@
 <html lang="en">
 <?php include("header.php");
 include("adminNav.php");?>
+
 <body>
-
-
 <script>
 // initaliize jQuery
 
@@ -46,7 +45,10 @@ $('.modal').modal();
                     <div id="CheckOut" class="modal">
                         <div class="modal-content">
                             <h4>Check Out</h4>
-                            <p>please add buttons kanya</p>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                </div>
+                            </div>
                         </div>
                         <div class="modal-footer">
                             <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>

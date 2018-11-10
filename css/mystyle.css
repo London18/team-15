@@ -187,13 +187,16 @@ body.hide-sidedrawer #footer {
 .watermark{
     opacity:0.4;
     height: 10px;
+.modal-content
     position: fixed;
     bottom: 110px;
     right: 10px;
 }
 
+.modal{
+    height: 500px;
+}
 
-
-.modal-content{
-    color:black;
+.modal .modal-content{
+    color: black;
 }
