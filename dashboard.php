@@ -10,7 +10,6 @@ include_once ($_SERVER['DOCUMENT_ROOT'] .'/include/header.php');
 </script>
 <div class="container z-depth-5" id="dash">
     <h1 id="demo"></h1>
-    <form class="row">
         <?php
         session_start();
         $db = new db();
@@ -87,19 +86,22 @@ include_once ($_SERVER['DOCUMENT_ROOT'] .'/include/header.php');
             <div id="CheckOut" class="modal">
                 <form action="checkout.php" method="post">
                     <div class="modal-content">
-                    <h4>Check Out</h4>
 
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <i class="material-icons prefix">mode_edit</i>
-                            <textarea name="comment" id="icon_prefix2" class="materialize-textarea"></textarea>
-                            <label for="icon_prefix2">Comments</label>
+                        <h4>Check Out</h4>
+
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">mode_edit</i>
+                                <textarea name="comment" id="icon_prefix2" class="materialize-textarea"></textarea>
+                                <label for="icon_prefix2">Comments</label>
+                            </div>
                         </div>
                     </div>
-                    </div>
                     <div class="modal-footer">
+
                         <button type="submit" id="inner" name="checkout" value=""  class="waves-light waves-effect btn-large">Checkout</button>
                         <a href="#!" class="modal-close waves-effect waves-green btn-flat" style="float: left">Cancel</a>
+
                     </div>
                 </form>
             </div>
@@ -140,11 +142,8 @@ include_once ($_SERVER['DOCUMENT_ROOT'] .'/include/header.php');
 <script>
 
 
-    function openmodal(id, disable) {
+    function openmodal(id) {
         $("#inner").val(id);
-        if(disable !== "") {
-            $("#inner").disable();
-        }
 
 
     }
