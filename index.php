@@ -11,14 +11,9 @@ if (session_status() == PHP_SESSION_NONE) {
 include_once ($_SERVER['DOCUMENT_ROOT'] .'/include/header.php');
 if(isset($_SESSION['email']))
 {
-    pageReturn("/dash.php");
+    pageReturn("/dashboard.php");
     die();
 }
-
-?>
-<!DOCTYPE html>
-<html lang="en">
-<?php include("header.php");
 ?>
 <body>
 
@@ -39,23 +34,6 @@ if(isset($_SESSION['email']))
                     <i class="material-icons prefix">lock_outline</i>
                     <input id="icon_password" type="password" class="validate" name="password">
                     <label for="icon_password">Password</label>
-=======
-        <form class ="col s12" >
-            <div class="row" style="margin-left: 30px;">
-                <div class="input-field col s10" style="margin-top:10%">
-                    <i class="material-icons prefix">account_circle</i>
-                    <input  id="icon_prefix" type="text" class="validate">
-                    <label  class="active" for="icon_prefix">Username</label>
-                </div>
-            </div>
-            <div class="row" style="margin-left: 30px;">
-                <div class="input-field col s10">
-                    <i class="material-icons prefix">lock_outline</i>
-                    <input id="icon_password" type="text" class="validate">
-                    <label class="active"for="icon_password">Password</label>
-                </div>
-            </div>
-            <div class="row">
                 <button style="width:100%; height:50px; font-size: 20px;" class="btn waves-effect waves-light" type="submit" name="action">Login
                     <i class="material-icons right">send</i>
                 </button>
