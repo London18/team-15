@@ -187,7 +187,6 @@ body.hide-sidedrawer #footer {
 .watermark{
     opacity:0.4;
     height: 10px;
-.modal-content
     position: fixed;
     bottom: 110px;
     right: 10px;
@@ -199,4 +198,16 @@ body.hide-sidedrawer #footer {
 
 .modal .modal-content{
     color: black;
+    width: 66%;
+    height: 50%
+}
+
+.modal-content .timepicker-container{
+    width: 80%;
+    height: 40%;
+}
+
+.timepicker-modal{
+    top: -5% !important;
+    position:absolute;
 }

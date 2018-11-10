@@ -47,6 +47,8 @@ $('.modal').modal();
                             <h4>Check Out</h4>
                             <div class="row">
                                 <div class="input-field col s12">
+                                    <label for="timepicker">Time</label>
+                                    <input type="text" name="time" class="timepicker">
                                 </div>
                             </div>
                         </div>
