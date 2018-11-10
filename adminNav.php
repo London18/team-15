@@ -58,7 +58,8 @@
         </li>
     </ul>
 </div>
-<header id="header">
+
+<header id="header"> <!-- create the menu button to pull out the sidenav -->
     <div class="mui-appbar mui--appbar-line-height">
         <div class="mui-container-fluid">
             <a id="pulloutbar" class="sidedrawer-toggle mui--hidden-xs mui--hidden-sm js-hide-sidedrawer"><i id="navpull" style="color:black" class="medium material-icons">menu</i></a>
@@ -67,7 +68,8 @@
     </div>
 </header>
 
-
+<!-- open the body tag in adminNav.php as we need to apply a class to it.
+ the divider stops the menu bar from overlapping the content -->
 <body class="hide-sidedrawer">
 
 <div class="divider"></div>
