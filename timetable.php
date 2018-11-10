@@ -36,7 +36,7 @@ include('adminNav.php');
         </tbody>
     </table>
 
-</div>
+</div>4
 </body>
 
 </html>
