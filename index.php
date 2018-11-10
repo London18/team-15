@@ -20,14 +20,14 @@
                 <div class="input-field col s10" style="margin-top:10%">
                     <i class="material-icons prefix">account_circle</i>
                     <input id="icon_prefix" type="text" class="validate">
-                    <label for="icon_prefix">Username</label>
+                    <label class="active" for="icon_prefix">Username</label>
                 </div>
             </div>
             <div class="row">
                 <div class="input-field col s10">
                     <i class="material-icons prefix">lock_outline</i>
                     <input id="icon_password" type="text" class="validate">
-                    <label for="icon_password">Password</label>
+                    <label class="active" style="padding-left:5%;" for="icon_password">Password</label>
                 </div>
             </div>
             <div class="row">
