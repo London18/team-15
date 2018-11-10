@@ -45,15 +45,15 @@
 
     <ul>
         <li>
-            <strong>Category 1</strong>
+            <strong><a href="https://www.juliashouse.org/about">About Us</a></strong>
 
         </li>
         <li>
-            <strong>Category 2</strong>
+            <strong><a href="https://www.juliashouse.org/how-we-help">How We Help</a></strong>
 
         </li>
         <li>
-            <strong>Category 3</strong>
+            <strong><a href="https://www.juliashouse.org/get-involved">Get Involved</a></strong>
 
         </li>
     </ul>
