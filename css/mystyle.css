@@ -21,7 +21,9 @@
     text-align: center;
     alignment: center;
 }
-
+#dashcard{
+    object-fit: cover;
+}
     @media only screen and (max-width:750px) {
         #login{
             width: 100%;
@@ -190,13 +192,21 @@ body.hide-sidedrawer #footer {
     right: 10px;
 }
 
-#outer
-{
-    width:100%;
-    text-align: center;
+.modal{
+    height: 500px;
+    padding-bottom: -5%;
 }
 
-#inner
-{
-    display: inline-block;
+.modal .modal-content{
+    color: black;
+    padding-bottom: 0px;
+    padding-top: 24px;
+    padding-left: 24px;
+    padding-right: 24px
+}
+
+#row1 {
+    text-align: left;
+    align-content: left;
+    align-items: left;
 }
