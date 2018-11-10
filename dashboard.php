@@ -4,6 +4,15 @@
 include("adminNav.php");?>
 <body>
 
+
+<script>
+// initaliize jQuery
+
+$(document).ready(function(){
+$('.modal').modal();
+});
+</script>
+
 <div class="container z-depth-5" id="dash">
     <h1 id="demo"></h1>
     <div class="row">
@@ -29,8 +38,31 @@ include("adminNav.php");?>
                     </table>
                 </div>
                 <div class="card-action">
-                    <a href="#">Check Out</a>
-                    <a href="#">Home Safe</a>
+                    <!-- Modal Triggers -->
+
+                    <a class="waves-effect waves-light btn modal-trigger" href="#CheckOut">CheckOut</a>
+                    <a class="waves-effect waves-light btn modal-trigger" href="#HomeSafe">Home Safe</a>
+
+                    <div id="CheckOut" class="modal">
+                        <div class="modal-content">
+                            <h4>Check out</h4>
+                            <p>please add buttons kanya</p>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+                        </div>
+                    </div>
+
+
+                    <div id="HomeSafe" class="modal">
+                        <div class="modal-content">
+                            <h4>Home Safe</h4>
+                            <p>please add buttons kanye</p>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
