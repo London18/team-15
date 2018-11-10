@@ -17,17 +17,17 @@
     <div class="row">
         <form class ="col s12" >
             <div class="row">
-                <div class="input-field col s10" style="margin-top:10%">
+                <div style="padding-left:30px;" class="input-field col s10" style="margin-top:10%">
                     <i class="material-icons prefix">account_circle</i>
-                    <input id="icon_prefix" type="text" class="validate">
-                    <label class="active" for="icon_prefix">Username</label>
+                    <input style="padding-left:30px;" id="icon_prefix" type="text" class="validate">
+                    <label style="padding-left:30px;" for="icon_prefix">Username</label>
                 </div>
             </div>
             <div class="row">
-                <div class="input-field col s10">
+                <div style="padding-left:30px;"class="input-field col s10">
                     <i class="material-icons prefix">lock_outline</i>
-                    <input id="icon_password" type="text" class="validate">
-                    <label class="active" style="padding-left:5%;" for="icon_password">Password</label>
+                    <input style="padding-left:30px;" id="icon_password" type="text" class="validate">
+                    <label style="padding-left:30px;"for="icon_password">Password</label>
                 </div>
             </div>
             <div class="row">
