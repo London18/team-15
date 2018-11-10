@@ -1,3 +1,7 @@
+<!-- import all of the header data so its fluid on all of the pages.
+     we also load the watermarked logo in this file.-->
+
+
 <head xmlns:height="http://www.w3.org/1999/xhtml">
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
