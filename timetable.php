@@ -8,12 +8,12 @@ include('adminNav.php');
 ?>
 <div id="content-wrapper">
 
-    <table class="highlight">
+    <table>
         <thead>
         <tr>
             <th>Name</th>
-            <th>Item Name</th>
-            <th>Item Price</th>
+            <th>location</th>
+            <th>check in</th>
         </tr>
         </thead>
 
