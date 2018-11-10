@@ -21,7 +21,9 @@
     text-align: center;
     alignment: center;
 }
-
+#dashcard{
+    object-fit: cover;
+}
     @media only screen and (max-width:750px) {
         #login{
             width: 100%;
