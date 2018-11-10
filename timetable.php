@@ -3,6 +3,7 @@
 <html>
 
 <?php
+include('header.php');
 include('adminNav.php');
 ?>
 <div id="content-wrapper">
