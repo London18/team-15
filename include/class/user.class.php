@@ -15,7 +15,7 @@ class user extends db
         }
         $hashedpassword = md5($password . SECRETHASH);
         $strippedemail = mysqli_real_escape_string(db::$mysqli,$email);
-        $loginsql = "SELECT email, password, access_level FROM user_account WHERE email = '" . $strippedemail . "'AND password = '" . $hashedpassword . "'";
+        $loginsql = "SELECT email, password, access_level FROM staff_tbl WHERE email = '" . $strippedemail . "'AND password = '" . $hashedpassword . "'";
         $row = self::query($loginsql);
         $user_data = mysqli_fetch_array($row);
         $row_count = $row->num_rows;
@@ -24,7 +24,7 @@ class user extends db
             $_SESSION["email"] = $user_data['email'];
             $_SESSION["access_access"] = $user_data['access_level'];
             $RNGsessionid = bin2hex(openssl_random_pseudo_bytes(16));
-            $updatesql = "UPDATE user_account SET session = '". $RNGsessionid ."' WHERE email ='" . $_POST["email"] . "'";
+            $updatesql = "UPDATE staff_tbl SET session = '". $RNGsessionid ."' WHERE email ='" . $_POST["email"] . "'";
             $result = self::query($updatesql) or
             die(mysqli_connect_error());
             $_SESSION['sessionid'] = $RNGsessionid;
@@ -37,7 +37,7 @@ class user extends db
 
     public static function getAccessLevel($email)
     {
-        $accessCheckSQL = "SELECT access_level FROM user_account WHERE email = '$email'";
+        $accessCheckSQL = "SELECT access_level FROM staff_tbl WHERE email = '$email'";
 
         $result = mysqli_query(self::$mysqli,$accessCheckSQL);
         $user_data = mysqli_fetch_array($result);
@@ -52,7 +52,7 @@ class user extends db
     }
 
     public static function getSessionID($email){
-        $checkSQL = "SELECT session FROM user_account WHERE email = '$email'";
+        $checkSQL = "SELECT session FROM staff_tbl WHERE email = '$email'";
 
         $result = db::query($checkSQL);
         $user_data = mysqli_fetch_array($result);

@@ -17,10 +17,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
     if (!empty($_POST['password']) && strlen($_POST['password']) > 7 && preg_match($pattern, $_POST['password']))
     {//not empty, match ANY character after trimming the string 8 or more times
 
-        $myname = mysqli_real_escape_string(user::$mysqli,$_POST['name']);
+        $myfirstname = mysqli_real_escape_string(user::$mysqli,$_POST['firstname']);
+        $mylastname = mysqli_real_escape_string(user::$mysqli,$_POST['lastname']);
         $myemail = mysqli_real_escape_string(user::$mysqli,$_POST['email']);
         $mypassword = mysqli_real_escape_string(user::$mysqli,$_POST['password']);
-        $myaddress = mysqli_real_escape_string(user::$mysqli,$_POST['address']);
+        $myaddress = mysqli_real_escape_string(user::$mysqli,$_POST['streetaddress']);
+        $mypostcode = mysqli_real_escape_string(user::$mysqli,$_POST['postcode']);
         $myphonehome = mysqli_real_escape_string(user::$mysqli,$_POST['phone_home']);
         $myphonemobile = mysqli_real_escape_string(user::$mysqli,$_POST['phone_mobile']);
 
@@ -38,7 +40,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
         }
 
         //check username does not exists
-        $sqlEmailCheck = user::query("SELECT * FROM user_account WHERE email = '$myemail'")
+        $sqlEmailCheck = user::query("SELECT * FROM staff_tbl WHERE email = '$myemail'")
         or die("Error: ".mysqli_error(user::$mysqli));
         $emailRow = mysqli_fetch_array($sqlEmailCheck);
         if($emailRow != null)
@@ -55,7 +57,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
             exit($sqlEmailCheck);
         }
 
-        db::query("INSERT INTO user_account (name,email, password,address,phone_home,phone_mobile, access_level) VALUES ('$myname','$myemail','$encryptedMessage','$myaddress','$myphonehome','$myphonemobile','$myAccessLevel')")
+        db::query("INSERT INTO staff_tbl (firstName, surname, email, password,streetAddress, postCode ,homePhone , mobilePhone, access_level) VALUES ('$myfirstname', '$mylastname','$myemail','$encryptedMessage','$myaddress','$mypostcode','$myphonehome','$myphonemobile','$myAccessLevel')")
         or die("Error: ".mysqli_error(user::$mysqli));
 
         if($user->getAccessLevel($_SESSION['login_user']) == 100)
