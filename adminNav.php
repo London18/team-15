@@ -49,11 +49,11 @@
 
         </li>
         <li>
-            <strong><a href="https://www.juliashouse.org/how-we-help">How We Help</a></strong>
+            <strong><a href="admin/adduser.php">Add User</a> </strong>
 
         </li>
         <li>
-            <strong><a href="https://www.juliashouse.org/get-involved">Get Involved</a></strong>
+            <strong><a href="logout.php">Logout</a> </strong>
 
         </li>
     </ul>
