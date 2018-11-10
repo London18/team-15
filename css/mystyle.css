@@ -17,12 +17,9 @@
 
 #dash {
     background-color: slategray;
-<<<<<<< HEAD
-=======
     color: white;
     text-align: center;
     alignment: center;
->>>>>>> dean
 }
 
     @media only screen and (max-width:750px) {
@@ -191,4 +188,15 @@ body.hide-sidedrawer #footer {
     position: fixed;
     bottom: 110px;
     right: 10px;
+}
+
+#outer
+{
+    width:100%;
+    text-align: center;
+}
+
+#inner
+{
+    display: inline-block;
 }

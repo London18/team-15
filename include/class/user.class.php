@@ -15,7 +15,7 @@ class user extends db
         }
         $hashedpassword = md5($password . SECRETHASH);
         $strippedemail = mysqli_real_escape_string(db::$mysqli,$email);
-        $loginsql = "SELECT email, password, access_level FROM staff_tbl WHERE email = '" . $strippedemail . "'AND password = '" . $hashedpassword . "'";
+        $loginsql = "SELECT payroll_ID, email, password, access_level FROM staff_tbl WHERE email = '" . $strippedemail . "'AND password = '" . $hashedpassword . "'";
         $row = self::query($loginsql);
         $user_data = mysqli_fetch_array($row);
         $row_count = $row->num_rows;
@@ -23,6 +23,7 @@ class user extends db
         {
             $_SESSION["email"] = $user_data['email'];
             $_SESSION["access_access"] = $user_data['access_level'];
+            $_SESSION["payrollid"] = $user_data['payroll_ID'];
             $RNGsessionid = bin2hex(openssl_random_pseudo_bytes(16));
             $updatesql = "UPDATE staff_tbl SET session = '". $RNGsessionid ."' WHERE email ='" . $_POST["email"] . "'";
             $result = self::query($updatesql) or
