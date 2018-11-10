@@ -27,3 +27,19 @@ function pageReturn($string)
 {
     header("refresh:0; url=" . siteroot() . $string);
 }
+
+function adminCheck($email)
+{
+    include_once($_SERVER['DOCUMENT_ROOT'] . '/include/core.php');
+    $user = new user();
+    if(user::getAccessLevel($email) >= 90)
+    {
+        //popup("Unauthorised Access", "/index.php");
+        //die();
+        //http_redirect("index.php");
+        return true;
+    }
+    else {
+        return false;
+    }
+}

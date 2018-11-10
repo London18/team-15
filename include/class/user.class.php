@@ -44,7 +44,7 @@ class user extends db
         $count_row = $result->num_rows;
         if($count_row == 1)
         {
-            return $user_data['accessLevel'];
+            return $user_data['access_level'];
         }
         else {
             return 0;
