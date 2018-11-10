@@ -53,7 +53,7 @@
 
         </li>
         <li>
-            <strong><a href="logout.php">Logout</a> </strong>
+            <strong><a href="logout.php">Logout</a> </strong> 
 
         </li>
     </ul>
