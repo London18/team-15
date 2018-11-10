@@ -17,14 +17,13 @@
 
 #dash {
     background-color: slategray;
-<<<<<<< HEAD
-=======
     color: white;
     text-align: center;
     alignment: center;
->>>>>>> dean
 }
-
+#dashcard{
+    object-fit: cover;
+}
     @media only screen and (max-width:750px) {
         #login{
             width: 100%;
@@ -191,4 +190,23 @@ body.hide-sidedrawer #footer {
     position: fixed;
     bottom: 110px;
     right: 10px;
+}
+
+.modal{
+    height: 500px;
+    padding-bottom: -5%;
+}
+
+.modal .modal-content{
+    color: black;
+    padding-bottom: 0px;
+    padding-top: 24px;
+    padding-left: 24px;
+    padding-right: 24px
+}
+
+#row1 {
+    text-align: left;
+    align-content: left;
+    align-items: left;
 }
