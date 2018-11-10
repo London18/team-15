@@ -14,26 +14,13 @@
     left: 50%;
     top: 65%;
 }
-#shift-details{
-    display: block;
-    width: 50%;
-    alignment: center;
-    text-align: center;
-    color: white;
-    width: 30%;
-}
 
-#client{
-    text-align: center;
-    width: 50%;
-}
 #dash {
     background-color: slategray;
     color: white;
     text-align: center;
     alignment: center;
 }
-
 #dashcard{
     object-fit: cover;
 }
@@ -207,20 +194,19 @@ body.hide-sidedrawer #footer {
 
 .modal{
     height: 500px;
+    padding-bottom: -5%;
 }
 
 .modal .modal-content{
     color: black;
-    width: 66%;
-    height: 50%
+    padding-bottom: 0px;
+    padding-top: 24px;
+    padding-left: 24px;
+    padding-right: 24px
 }
 
-.modal-trigger {
-    font-size: 30px;
-    margin: 10px;
-}
-
-.dropdown-trigger btn {
-    padding: 20px;
-    font-size: 10px;
+#row1 {
+    text-align: left;
+    align-content: left;
+    align-items: left;
 }

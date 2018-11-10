@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <?php include("header.php");
@@ -6,12 +7,10 @@ include("adminNav.php");?>
 <body>
 <script>
 // initaliize jQuery
+
 $(document).ready(function(){
-    $('.modal').modal();
+$('.modal').modal();
 });
-
-
-
 </script>
 
 <div class="container z-depth-5" id="dash">
@@ -46,33 +45,64 @@ $(document).ready(function(){
 
                     <div id="CheckOut" class="modal">
                         <div class="modal-content">
-                            <h4>If you did overtime please imput it below along with the reason why:</h4>
+                            <h4>Check Out</h4>
+                            <div class="row" id="row1">
+                                <label style="padding-left: 2%">Time </label>
+                                <div class="input-field col s12">
+                                    <input type="time" name="time">
+                                </div>
+                            </div>
+
+                            <div class="row" id="row1">
+                                <label style="padding-left: 2%">ETA </label>
+                                <div class="input-field col s12">
+                                    <input type="time" name="time">
+                                </div>
+                            </div>
+
                             <div class="row">
                                 <div class="input-field col s12">
-                                    <label for="timepicker">Finish Time</label>
-                                    <input type="time" name="time">
+                                    <i class="material-icons prefix">mode_edit</i>
+                                    <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+                                    <label for="icon_prefix2">Comments</label>
                                 </div>
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <a href="#!" class="modal-close waves-effect waves-green btn-flat" style="font-size: 40px; color: deepskyblue;">Agree</a>
-                            <a href="#!" class="modal-close waves-effect waves-green btn-flat" style="font-size: 40px; color:red;">Cancel</a>
-
+                            <a href="#!" class="modal-close waves-effect waves-green btn-flat" style="float: right" id="agree" >Agree</a>
+                            <a href="#!" class="modal-close waves-effect waves-green btn-flat" style="float: left">Cancel</a>
                         </div>
                     </div>
 
 
                     <div id="HomeSafe" class="modal">
                         <div class="modal-content">
-                            <h4>If you did overtime please imput it below along with the reason why:</h4>
-                            <label for="timepicker">Finish Time</label>
-                            <input type="time" name="time">
+                            <h4>Home Safe</h4>
+                            <div class="row" id="row1">
+                                <label style="padding-left: 2%">Time </label>
+                                <div class="input-field col s12">
+                                    <input type="time" name="time">
+                                </div>
+                            </div>
+
+                            <div class="row" id="row1">
+                                <label style="padding-left: 2%">Mileage </label>
+                                <div class="input-field col s12">
+                                    <input type="number" name="number">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <i class="material-icons prefix">mode_edit</i>
+                                    <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+                                    <label for="icon_prefix2">Comments</label>
+                                </div>
+                            </div>
                         </div>
                         <div class="modal-footer">
-
-                            <a href="#!" class="modal-close waves-effect waves-green btn-flat" style="font-size: 40px; color: deepskyblue;">Agree</a>
-                            <a href="#!" class="modal-close waves-effect waves-green btn-flat" style="font-size: 40px; color:red;">Cancel</a>
-
+                            <a href="#!" class="modal-close waves-effect waves-green btn-flat" style="float: right" id="agree" >Agree</a>
+                            <a href="#!" class="modal-close waves-effect waves-green btn-flat" style="float: left">Cancel</a>
                         </div>
                     </div>
                 </div>
