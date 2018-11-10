@@ -21,13 +21,17 @@
                     <i class="material-icons prefix">account_circle</i>
                     <input style="padding-left:30px;" id="icon_prefix" type="text" class="validate">
                     <label style="padding-left:30px;" for="icon_prefix">Username</label>
+                    <input id="icon_prefix" type="text" class="validate">
+                    <label class="active" for="icon_prefix">Username</label>
                 </div>
             </div>
             <div class="row">
-                <div style="padding-left:30px;"class="input-field col s10">
+                <div class="input-field col s10">
                     <i class="material-icons prefix">lock_outline</i>
                     <input style="padding-left:30px;" id="icon_password" type="text" class="validate">
                     <label style="padding-left:30px;"for="icon_password">Password</label>
+                    <input id="icon_password" type="text" class="validate">
+                    <label class="active" style="padding-left:5%;" for="icon_password">Password</label>
                 </div>
             </div>
             <div class="row">
