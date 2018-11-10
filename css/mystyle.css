@@ -203,3 +203,7 @@ body.hide-sidedrawer #footer {
 .navpull {
     background-color: #0D47A1;
 }
+
+.divider {
+    padding: 30px;
+}
