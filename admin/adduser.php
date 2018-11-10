@@ -8,6 +8,11 @@
 include_once ($_SERVER['DOCUMENT_ROOT'] .'/include/header.php');
 ?>
 
+<link rel="stylesheet" href="../css/materialize.min.css" />
+<link rel="stylesheet" href="../css/mystyle.css">
+<script type="text/javascript" src="../css/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="../js/materialize.min.js"></script>
+
 <div class="container">
     <div class="row">
         <div class="col-sm-6 col-md-4 col-md-offset-4">
@@ -48,9 +53,9 @@ include_once ($_SERVER['DOCUMENT_ROOT'] .'/include/header.php');
                     <button class="btn btn-lg btn-primary btn-block" type="submit">Register</button>
                 </form>
                 <br>
-                <form action="admin.php">
-                    <button class="btn btn-lg btn-primary btn-block" type="submit">Return to Dashboard</button>
-                </form>
+
+                <a href="../dashboard.php" ><button class="btn btn-lg btn-primary btn-block" type="submit">Return to Dashboard</button> </a>
+
             </div>
         </div>
     </div>
