@@ -24,6 +24,8 @@ include_once ($_SERVER['DOCUMENT_ROOT'] .'/include/header.php');
             $result = db::query($sql);
             $row2 = mysqli_fetch_assoc($result);
             $appointID = $row2['appointment_ID'];
+
+
             $prechecksql = "SELECT * FROM sits_tbl WHERE appointment_ID = '$appointID'";
             $preresult = db::query($prechecksql);
             $prerow = mysqli_fetch_assoc($preresult);
@@ -36,12 +38,6 @@ include_once ($_SERVER['DOCUMENT_ROOT'] .'/include/header.php');
             $homecheck = "SELECT * FROM staff_home_tbl WHERE Staff_Home_ID = '$staffhomeid'";
             $homeresult = db::query($homecheck);
             $homerow = mysqli_fetch_assoc($homeresult);
-
-
-            if(!is_null($homerow['homeTransportDate']) && !is_null($prerow['sitDate']))
-            {
-                continue;
-            }
 
 
             $sql2 = "SELECT appointmentTime, appointmentDate, client_ID FROM appointments_tbl WHERE appointment_ID = '$appointID'";
@@ -78,7 +74,7 @@ include_once ($_SERVER['DOCUMENT_ROOT'] .'/include/header.php');
                 </div>
                 <div class="card-action">
                     <a class="waves-effect waves-light btn modal-trigger" onclick="openmodal(<?php echo $appointID; ?>)" <?php if($prerow['sitDate'] != null) {echo "disabled";}?> href="#CheckOut">Check Out</a>
-                    <a class="waves-effect waves-light btn modal-trigger" href="#HomeSafe">Home Safe</a>
+                    <a class="waves-effect waves-light btn modal-trigger" onclick="openhome(<?php echo $payrollid;?>)" <?php if(!is_null($homerow['homeTransportDate'])){echo "disabled";}?> href="#HomeSafe">Home Safe</a>
                 </div>
             </div>
         </div>
@@ -107,21 +103,9 @@ include_once ($_SERVER['DOCUMENT_ROOT'] .'/include/header.php');
             </div>
 
     <div id="HomeSafe" class="modal">
+        <form action="home.php" method="post">
                 <div class="modal-content">
                     <h4>Home Safe</h4>
-                    <div class="row" id="row1">
-                        <label style="padding-left: 2%">Time </label>
-                        <div class="input-field col s12">
-                            <input type="time" name="time">
-                        </div>
-                    </div>
-
-                    <div class="row" id="row1">
-                        <label style="padding-left: 2%">Mileage </label>
-                        <div class="input-field col s12">
-                            <input type="number" name="number">
-                        </div>
-                    </div>
 
                     <div class="row">
                         <div class="input-field col s12">
@@ -132,9 +116,10 @@ include_once ($_SERVER['DOCUMENT_ROOT'] .'/include/header.php');
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <a href="#!" class="modal-close waves-effect waves-green btn-flat" style="float: right" id="agree" >Agree</a>
+                    <button type="submit" id="agree" name="home" value=""  class="waves-light waves-effect btn-large">Agree</button>
                     <a href="#!" class="modal-close waves-effect waves-green btn-flat" style="float: left">Cancel</a>
                 </div>
+        </form>
             </div>
         </div>
     </div>
@@ -145,6 +130,10 @@ include_once ($_SERVER['DOCUMENT_ROOT'] .'/include/header.php');
     function openmodal(id) {
         $("#inner").val(id);
 
+
+    }
+    function openhome(id) {
+        $("#agree").val(id);
 
     }
     var d = new Date();
