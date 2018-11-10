@@ -43,19 +43,16 @@
     </div>
     <div class="mui-divider"></div>
 
-    <ul>
+    <ul><a href="newShift.php">
         <li>
-            <strong>Category 1</strong>
+            <strong>Add New Shift</strong>
 
-        </li>
+        </li></a>
+        <a href="dashboard.php">
         <li>
-            <strong>Category 2</strong>
+            <strong>View timetables</strong>
 
-        </li>
-        <li>
-            <strong>Category 3</strong>
-
-        </li>
+        </li></a>
     </ul>
 </div>
 
