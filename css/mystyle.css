@@ -14,13 +14,26 @@
     left: 50%;
     top: 65%;
 }
+#shift-details{
+    display: block;
+    width: 50%;
+    alignment: center;
+    text-align: center;
+    color: white;
+    width: 30%;
+}
 
+#client{
+    text-align: center;
+    width: 50%;
+}
 #dash {
     background-color: slategray;
     color: white;
     text-align: center;
     alignment: center;
 }
+
 #dashcard{
     object-fit: cover;
 }
@@ -202,12 +215,12 @@ body.hide-sidedrawer #footer {
     height: 50%
 }
 
-.modal-content .timepicker-container{
-    width: 80%;
-    height: 40%;
+.modal-trigger {
+    font-size: 30px;
+    margin: 10px;
 }
 
-.timepicker-modal{
-    top: -5% !important;
-    position:absolute;
+.dropdown-trigger btn {
+    padding: 20px;
+    font-size: 10px;
 }

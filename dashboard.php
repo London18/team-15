@@ -6,10 +6,12 @@ include("adminNav.php");?>
 <body>
 <script>
 // initaliize jQuery
-
 $(document).ready(function(){
-$('.modal').modal();
+    $('.modal').modal();
 });
+
+
+
 </script>
 
 <div class="container z-depth-5" id="dash">
@@ -44,27 +46,33 @@ $('.modal').modal();
 
                     <div id="CheckOut" class="modal">
                         <div class="modal-content">
-                            <h4>Check Out</h4>
+                            <h4>If you did overtime please imput it below along with the reason why:</h4>
                             <div class="row">
                                 <div class="input-field col s12">
-                                    <label for="timepicker">Time</label>
-                                    <input type="text" name="time" class="timepicker">
+                                    <label for="timepicker">Finish Time</label>
+                                    <input type="time" name="time">
                                 </div>
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+                            <a href="#!" class="modal-close waves-effect waves-green btn-flat" style="font-size: 40px; color: deepskyblue;">Agree</a>
+                            <a href="#!" class="modal-close waves-effect waves-green btn-flat" style="font-size: 40px; color:red;">Cancel</a>
+
                         </div>
                     </div>
 
 
                     <div id="HomeSafe" class="modal">
                         <div class="modal-content">
-                            <h4>Home Safe</h4>
-                            <p>please add buttons kanye</p>
+                            <h4>If you did overtime please imput it below along with the reason why:</h4>
+                            <label for="timepicker">Finish Time</label>
+                            <input type="time" name="time">
                         </div>
                         <div class="modal-footer">
-                            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+
+                            <a href="#!" class="modal-close waves-effect waves-green btn-flat" style="font-size: 40px; color: deepskyblue;">Agree</a>
+                            <a href="#!" class="modal-close waves-effect waves-green btn-flat" style="font-size: 40px; color:red;">Cancel</a>
+
                         </div>
                     </div>
                 </div>
