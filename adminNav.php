@@ -35,7 +35,7 @@
     });
 
 </script>
-</head>
+
 
 <div id="sidedrawer" class="mui--no-user-select">
     <div id="sidedrawer-brand" height="200px;" class="mui--appbar-line-height">
@@ -58,16 +58,16 @@
         </li>
     </ul>
 </div>
-<header id="header">
+
+<header id="header"> <!-- create the menu button to pull out the sidenav -->
     <div class="mui-appbar mui--appbar-line-height">
         <div class="mui-container-fluid">
-            <a id="pulloutbar" class="sidedrawer-toggle mui--hidden-xs mui--hidden-sm js-hide-sidedrawer"><i id="navpull" class="medium material-icons">menu</i></a>
-            <span class="mui--text-title mui--visible-xs-inline-block">Admin</span>
+            <a id="pulloutbar" class="sidedrawer-toggle mui--hidden-xs mui--hidden-sm js-hide-sidedrawer"><i id="navpull" style="color:black" class="medium material-icons">menu</i></a>
+
         </div>
     </div>
 </header>
 
-
-<body class="hide-sidedrawer">
+<!-- the divider stops the menu bar from overlapping the content -->
 
 <div class="divider"></div>

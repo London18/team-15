@@ -8,12 +8,12 @@ include('adminNav.php');
 ?>
 <div id="content-wrapper">
 
-    <table class="highlight">
+    <table>
         <thead>
         <tr>
             <th>Name</th>
-            <th>Item Name</th>
-            <th>Item Price</th>
+            <th>location</th>
+            <th>check in</th>
         </tr>
         </thead>
 
@@ -36,11 +36,7 @@ include('adminNav.php');
         </tbody>
     </table>
 
-</div>
-</body>
-<!--JavaScript at end of body for optimized loading-->
-<script type="text/javascript" src="js/materialize.min.js"></script>
-
+</div>4
 </body>
 
 </html>
