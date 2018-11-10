@@ -15,7 +15,10 @@ include_once ($_SERVER['DOCUMENT_ROOT'] .'/include/header.php');
             <div class="account-wall">
                 <form id="register" class="form-signin" action = "processuser.php" method = "post">
                     <div class="block">
-                        <input type="text" autocomplete="name" name = "name" class="form-control" placeholder="joe bloggs" required>
+                        <input type="text" autocomplete="first name" name = "firstname" class="form-control" placeholder="joe" required>
+                    </div>
+                    <div class="block">
+                        <input type="text" autocomplete="last name" name = "lastname" class="form-control" placeholder="bloggs" required>
                     </div>
                     <div class="block">
                         <input type="text" autocomplete="email" name = "email" class="form-control" placeholder="example@email.com" required>
@@ -24,7 +27,10 @@ include_once ($_SERVER['DOCUMENT_ROOT'] .'/include/header.php');
                         <input id="password" autocomplete="new-password" type="password" name = "password" class="form-control" placeholder="Password" required><br>
                     </div>
                     <div class="block">
-                        <input type="text" name = "address" class="form-control" placeholder="Address" required><br>
+                        <input type="text" name = "streetaddress" class="form-control" placeholder="123 Some Road, Some Town" required><br>
+                    </div>
+                    <div class="block">
+                        <input type="text" name = "postcode" class="form-control" placeholder="AB12 DEF" required><br>
                     </div>
                     <div class="block">
                         <input type="text" name = "phone_home" class="form-control" placeholder="Home Phone" required><br>
