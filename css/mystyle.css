@@ -60,9 +60,7 @@ button {
 }
 
 
-tr:hover{
-    background-color: #00b0ff;
-}
+
 
 
 #header {
@@ -206,4 +204,12 @@ body.hide-sidedrawer #footer {
 
 .divider {
     padding: 30px;
+}
+
+.watermark{
+    opacity:0.4;
+    height: 10px;
+    position: fixed;
+    bottom: 110px;
+    right: 10px;
 }
